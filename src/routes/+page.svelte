@@ -14,7 +14,6 @@
     <div>
         <h2>Contact</h2>
         <p>Email: mkurek@college.harvard.edu</p>
-        <p>Phone: +1 (617) 682-5973</p>
         <a href="resume.txt">CV/Resume</a>
     </div>
 
