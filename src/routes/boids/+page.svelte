@@ -159,7 +159,7 @@
         flex-direction: column;
 		position: relative;
 		padding: 0.7rem 1rem;
-		margin: 5rem;
+		/* margin: 5rem; */
 		border-radius: 0.5rem;
 		min-width: 40%;
 		overflow: hidden;

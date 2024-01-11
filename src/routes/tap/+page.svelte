@@ -221,6 +221,7 @@
 		align-items: center;
 		justify-content: center;
 	}
+
     .wrapper {
         display: flex;
         align-items: center;
@@ -233,6 +234,7 @@
 	article {
 		text-align: justify
 	}
+
     @media screen and (max-width: 1000px) {
       .wrapper {
 		  flex-direction: column;
@@ -240,6 +242,7 @@
 	  .terminal {
 		  width: 90%;
 		  font-size: 1rem;
+		  min-height: 20em;
 	  }
       article {
         width: 90%; 
@@ -253,6 +256,8 @@
 		}
 		.terminal {
 			font-size: 1.2rem;
+		    min-height: 25rem;
+		    margin: 5rem;
 		}
     }
 	
@@ -262,11 +267,11 @@
 		/* font-size: 1.5rem; */
 		background: #333;
 		padding: 0.7rem 1rem;
-		margin: 5rem;
+		/* margin: 5rem; */
 		border-radius: 0.5rem;
 		color: #b8b8b8;
 		box-shadow: 1px 1px #ccc;
-		min-height: 25rem;
+		/* min-height: 25rem; */
 		min-width: 40%;
 		overflow: hidden;
 	}
