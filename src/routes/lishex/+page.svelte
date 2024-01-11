@@ -1,5 +1,7 @@
+<article>
 <div class="row">
-    <div class="column">
+  <div class="column">
+    <div class="pre_parent">
     <pre>
 
 
@@ -35,8 +37,9 @@
                             (((((((                 ((((((((
                                  &(((((((((((((((((((((
     </pre>
-</div>
-<div class="col">
+    </div>
+  </div>
+<div class="column">
 <h1 id="lishex-codename-1f98a-">Lishex (codename 1F98A)</h1>
 <p>A UCI chess-engine built in C++.</p>
 <h3 id="features">Features</h3>
@@ -87,6 +90,7 @@ a basic implementation of Adam (in mini-batch mode)</li>
     </div>
     <div class="column">
         <h3 id="todos">TODOs</h3>
+        Lishex is a work in progress and there are many features that I would like to implement in the future.  These include:
         <ul>
         <li>More <a href="https://www.chessprogramming.org/Extensions">search extensions</a>: extending search depth in specific subtrees to combat the <a href="https://www.chessprogramming.org/Horizon_Effect">horizon effect</a></li>
         <li><a href="https://www.chessprogramming.org/Parallel_Search">LazySMP</a> for parallel searching on multiple threads</li>
@@ -99,19 +103,47 @@ a basic implementation of Adam (in mini-batch mode)</li>
         </ul>
     </div>
 </div>
-<h3 id="download">Source code</h3>
-<p>You can find the project repository <a href="https://www.github.com/MKJM2/lishex">here</a>.</p>
+<div class="row">
+  <div class="column">
+    <h3 id="download">Source code</h3>
+    <div class="pre_parent">
+    <p>You can find the project repository <a href="https://www.github.com/MKJM2/lishex">here</a>.</p>
+    </div>
+  </div>
+</div>
+</article>
 
 <style>
+article {
+  /* padding-top: 2rem; */
+  min-height: 90vh;
+}
 .row {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.pre_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .column {
   flex: 50%;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .column h3 {
     text-align: center
 }
+
+/* Media query for screens smaller than 600 pixels */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%; /* Make columns take up 100% width */
+  }
+}
+
 </style>

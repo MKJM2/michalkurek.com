@@ -83,10 +83,10 @@
 </script>
 <div class="wrapper">
     <div class="game">
-    <iframe id="gameIFrame" title="A boids simulation" src="boids_wasm.html" width="960" height="540"
-    scrolling="no"
-    tabindex="-1"
-    ></iframe>
+        <iframe id="gameIFrame" title="A boids simulation" src="boids_wasm.html" width="960" height="540"
+        scrolling="no"
+        tabindex="-1"
+        ></iframe>
         <div class="controls">
             Press <b>F</b> to toggle fullscreen. 
             Press <b>SPACE</b> to spawn a new boid at mouse cursor.
@@ -127,7 +127,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: row; 
-        height: 100%
+        height: 100%;
+        min-height: 90vh;
     }
 
     @media screen and (max-width: 1000px) {
@@ -160,23 +161,23 @@
 		padding: 0.7rem 1rem;
 		margin: 5rem;
 		border-radius: 0.5rem;
-		min-height: 25rem;
 		min-width: 40%;
 		overflow: hidden;
         font-size: 0.8rem;
         align-items: center;
         justify-content: center;
+		/* min-height: 25rem; */
+        height: auto;
 	}
 
     #gameIFrame {
-        position: absolute;
+        /* position: absolute; */
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        min-height: 400px;
     }
-
-
 
 	p {
 		margin: 0.2rem 0;
