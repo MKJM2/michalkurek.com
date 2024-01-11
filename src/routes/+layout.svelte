@@ -8,7 +8,7 @@
     {/if}
 </nav>
 
-<slot></slot>
+<slot/>
 
 <style>
     :global(html) {
@@ -23,6 +23,13 @@
 		flex-direction: column;
         height: 100%;
 	}
+
+    @media screen and (max-width: 1000px) {
+        :global(body) {
+            height: auto;
+            font: 0.8rem;
+        }
+    }
     nav {
         width: 100%;
         margin-left: 1rem;
